@@ -244,4 +244,76 @@ textarea {
     page-break-after: avoid;
   }
 }
+.body, html {
+  margin: 0;
+  padding: 0;
+  background-color: red !important;
+  height: 100%;
+}
+
+h1 {
+  font-family: Calibri;
+  font-size: large;
+  font-weight: 1900;
+  text-align: start;
+}
+
+.hero {
+  background-image: url("../img/engagera-dig.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;  /* fyller hela skärmens höjd */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 50px;
+  text-align: center;
+  color: white;
+}
+
+
+
+
+.red-box {
+  background-color: #ED1B34;  /* Socialdemokraternas röd, kan ändras */
+  color: white;              /* vit text ovanpå röd bakgrund */
+  padding: 20px;             /* luft runt texten */
+  border-radius: 8px;        /* rundade hörn, ta bort om du vill ha raka */
+  max-width: 600px;          /* boxen blir inte bredare än 600px */
+  text-align: center;
+  font-size: 68px!important;
+  font-weight: bold;/* centrerar texten */
+  p {
+    font-size: 168px !important; /* Lägg till !important för att tvinga fram ändringen */
+    font-weight: bold;
+  }
+  span {
+    font-size: 68px !important;
+    font-weight: bold;
+  }
+}
+
+.main-nav {
+  /* Tar bort standardpunkterna från ul */
+  list-style: none;
+  /* Sätter ul till en flex-container */
+  display: flex;
+  /* Valfritt: Ta bort standardmarginal och padding */
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav li {
+  /* Lägger till avstånd mellan elementen */
+  margin-right: 20px;
+}
+
+/* Valfritt: Ta bort understrykning från länkarna */
+.main-nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+}
 
